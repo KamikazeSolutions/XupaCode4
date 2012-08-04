@@ -47,6 +47,7 @@
 
 - (void)insertNewObject:(id)sender
 {
+    NSLog(@"Teste para commit");
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
     NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
